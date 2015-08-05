@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node=24
+#SBATCH --partition=compute
+#SBATCH -t  00:30:00
+#SBATCH --job-name fit_line_SCALE
+#SBATCH --output fit_line_SCALE.out
+
+cd $SLURM_SUBMIT_DIR
+export PYTHONPATH=
+white_noise_scale=SCALE runipy fit_line.ipynb
