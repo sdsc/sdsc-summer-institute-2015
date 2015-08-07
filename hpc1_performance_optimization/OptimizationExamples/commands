@@ -1,5 +1,5 @@
 # Obtaining a Gordon compute node for 3 hours
-qsub -I -q normal -lnodes=1:ppn=16:native,walltime=3:00:00 -A gue998
+qsub -I -q normal -lnodes=1:ppn=16:native,walltime=3:00:00
 
 # Note on CPU binding. A few of the Gordon compute nodes may have
 # missed installation of patch that regulates clock speed when core 0
