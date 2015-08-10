@@ -1,0 +1,8 @@
+/bin/date > task1.out
+/bin/hostname > task2.out
+cat /proc/cpuinfo > cpuinfo.dat
+df | grep oasis > Lustre.fs.info
+df | grep scratch > task5.out
+ls /scratch/$USER > task6.out
+ps -ef | grep $USER > task7.out
+/usr/bin/w > task8.out

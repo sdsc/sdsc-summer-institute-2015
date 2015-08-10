@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name="localscratch"
+#SBATCH --output="localscratch.%j.%N.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=24
+#SBATCH --export=ALL
+#SBATCH -t 01:30:00
+
+export WKDIR=`pwd`
+#Change to local scratch (SSD) and run IOR benchmark
+cd /scratch/$USER/$SLURM_JOBID
+
+#Run IO benchmark
+ibrun -np 4 $WKDIR/IOR.exe -F -t 1m -b 4g -v -v

@@ -1,0 +1,16 @@
+Got 8 task slotsGot 8 task slotsGot 8 task slotsGot 8 task slotsGot 8 task slotsGot 8 task slotsGot 8 task slots
+
+
+
+
+
+
+MPI process 6 on gcn-3-58.sdsc.edu running task [ps -ef | grep $USER > task7.out]MPI process 2 on gcn-3-58.sdsc.edu running task [cat /proc/cpuinfo > cpuinfo.dat]
+
+MPI process 3 on gcn-3-58.sdsc.edu running task [df | grep oasis > Lustre.fs.info]MPI process 0 on gcn-3-58.sdsc.edu running task [/bin/date > task1.out]MPI process 7 on gcn-3-58.sdsc.edu running task [/usr/bin/w > task8.out]
+
+Got 8 task slots
+MPI process 4 on gcn-3-58.sdsc.edu running task [df | grep scratch > task5.out]
+MPI process 5 on gcn-3-58.sdsc.edu running task [ls /scratch/$USER > task6.out]
+MPI process 1 on gcn-3-58.sdsc.edu running task [/bin/hostname > task2.out]
+
