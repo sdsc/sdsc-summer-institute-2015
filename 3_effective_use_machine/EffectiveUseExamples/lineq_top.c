@@ -30,9 +30,9 @@ void solver (int n) {
   
   dgesv(&n, &nrhs, a, &lda, ipiv, b, &ldb, &info);
 
-  free(a);
-  free(b);
-  free(ipiv);
+  //  free(a);
+  //  free(b);
+  //  free(ipiv);
 
   return;
 }
