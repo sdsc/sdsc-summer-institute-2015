@@ -7,5 +7,4 @@
 #SBATCH --output fit_line_SCALE.out
 
 cd $SLURM_SUBMIT_DIR
-export PYTHONPATH=
-white_noise_scale=SCALE runipy fit_line.ipynb
+white_noise_scale=SCALE runipy fit_line.ipynb fit_line_SCALE.ipynb
