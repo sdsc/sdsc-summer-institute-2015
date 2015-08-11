@@ -1,4 +1,5 @@
 for scale in 10 30 50 100 200 500
 do
-sed "s/SCALE/$scale/" slurm.serial.template | sbatch
+sed "s/SCALE/$scale/" slurm.serial.template | sbatch # use an entire node
+# sed "s/SCALE/$scale/" slurm.shared.template | sbatch # use only 1 core in the shared queue
 done
