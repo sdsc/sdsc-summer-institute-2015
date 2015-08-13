@@ -34,7 +34,7 @@ C     Add arrays X and YT
       call system_clock(clock1)
       do j=1,n
         do i=1,n
-            z(i,j) = x(i,j) + y(i,j)
+            z(i,j) = x(i,j) + y(j,i)
          enddo
       enddo
       call system_clock(clock2)
@@ -42,7 +42,7 @@ C     Add arrays X and YT
 
 C     Add arrays X and YT using tiling
 c      call system_clock(clock1)
-c      tile = 32
+c      tile = 64
 c      do jj=1,n,tile
 c         do i=1,n
 c            do j=jj,min(n, jj+tile-1)
