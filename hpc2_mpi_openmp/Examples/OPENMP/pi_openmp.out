@@ -1,0 +1,5 @@
+Hello from thread = 0
+Number of threads = 3
+Hello from thread = 1
+Hello from thread = 2
+Pi = 3.141594606714
